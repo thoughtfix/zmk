@@ -27,8 +27,8 @@ LOG_MODULE_REGISTER(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 // fix9900: originally hold-Shift-to-scroll, checked via an event listener
 // (fixing an earlier version that polled zmk_hid_mod_is_pressed() and hit
-// a real race condition against this thread's blocking I2C reads, see
-// git history). Switched from hold-a-modifier to click-to-toggle on the
+// a real race condition against this thread's blocking I2C reads).
+// Switched from hold-a-modifier to click-to-toggle on the
 // trackpad's own center click instead: the whole gesture now only needs
 // the hand/thumb already on the trackpad, no coordinating a separate hand
 // holding a keyboard modifier down for the entire drag. Also removes any
