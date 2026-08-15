@@ -1,0 +1,8 @@
+# Copyright (c) 2026 thoughtfix
+# SPDX-License-Identifier: MIT
+
+description: Volume Down / Shift-Volume-Up behavior with proper Shift-bit release
+
+compatible: "zmk,behavior-vol-shift"
+
+include: zero_param.yaml
